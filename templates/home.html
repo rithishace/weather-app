@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/home.css') }}">
+    <link href="fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+    <style>
+        footer {
+          text-align: center;
+          padding: 3px;
+          background-color: DarkSalmon;
+          color: white;
+        }
+        .content {
+  max-width: 500px;
+  margin: auto;
+        }
+        </style>
+</head>
+<body>
+    <div class="content">
+<h1 class="weatherText">Weather Dashboard using Python and Open weather map</h1>
+<form class="weatherText" id="weatherForm" action="{{ url_for('render_results') }}" method="post">
+    City Name: <input class="weatherText" id="weatherInput" type="text" name="zipCode"><br>
+    <input class="weatherText" id="weatherSubmit" type="submit" value="Submit">
+</form>
+</div>
+<footer>
+    <p>Author: RITHISH KUMAR<br>
+    <a href="rithishkumar01092000@gmail.com">rithishkumar01092000@gmail.com</a></p>
+  </footer>
+</body>
+</html>

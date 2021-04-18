@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/results.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+    <style>
+        footer {
+          text-align: center;
+          padding: 3px;
+          background-color: DarkSalmon;
+          color: white;
+        }
+        .content {
+  max-width: 500px;
+  margin: auto;
+        }
+        </style>
+</head>
+<body>
+    <div class="content">
+<div id="weatherResults">
+    <h3>Weather in {{ location }}</h3>
+    <h2>{{ tempf }}° F / {{tempc}}° C</h2>
+    <h3>{{ weather }}</h3>
+    <h4>Feels like: {{ feels_like }}° F / {{feel_like}}° C </h4>
+</div></div>
+<footer>
+    <p>Author: RITHISH KUMAR<br>
+    <a href="rithishkumar01092000@gmail.com">rithishkumar01092000@gmail.com</a></p>
+  </footer>
+</body>
+
+</html>
